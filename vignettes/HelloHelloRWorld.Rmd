@@ -1,6 +1,6 @@
 ---
 title: "How to Get Presents"
-author: "Sr. Rterios Johnson"
+author: "Rterios Johnson"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
