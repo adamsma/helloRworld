@@ -10,11 +10,11 @@
 #' @noRd
 GenData <- function(){
 
-    numCols <- sample(NCOL(datasets::mtcars),1)
+    numCols <- sample(NCOL(mtcars),1)
 
-    datasets::mtcars %>%
-        select(sample(seq_along(datasets::mtcars), numCols)) %>%
-        sample_n(sample(NROW(datasets::mtcars),1))
+    mtcars %>%
+        select(sample(seq_along(mtcars), numCols)) %>%
+        sample_n(sample(NROW(mtcars),1))
 
 }
 
