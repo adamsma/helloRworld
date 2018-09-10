@@ -1,14 +1,23 @@
 Package: helloRworld
-Type: Package
-Title: What the Package Does (Title Case)
+Title: Greets You and Gives You Presents
 Version: 0.1.0
-Author: Rterios Johnson
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: person("Rterios", "Johnson", email = "bob@officedownthehall.net",
+                 role = c("aut", "cre"))
+Description: This packages starts with the template new package and expands.
+    In addition to the classic 'hello' function, this package also includes
+    a 'presents' function. This function generates a more personalized greeting
+    and then gives a (data) present.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Imports: 
-    dplyr (>= 0.7.6)
-Depends: R (>= 3.5)
+Imports:
+    dplyr (>= 0.7.6),
+    datasets,
+    magrittr
+Depends:
+    R (>= 3.5)
+RoxygenNote: 6.1.0
+Suggests: knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr

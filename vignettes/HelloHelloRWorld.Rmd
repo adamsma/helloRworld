@@ -1,0 +1,44 @@
+---
+title: "How to Get Presents"
+author: "Sr. Rterios Johnson"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How to Get Presents}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+library(helloRworld)
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+## The Tried and True
+
+If you want to use the old stand-by "Hello, world!", just type `hello()`:
+
+```{r hello, echo = FALSE}
+hello()
+```
+
+## Making It Personal
+
+If you want a bit more personal greeting and a present of data try this:
+
+```{r presents}
+Presents()
+```
+
+## Making It Really Personal
+
+Suppose your login name isn't personal enough for you. You can set the name via `options(helloRworld.user = "YourNameHere")`
+
+```{r reallyPersonal, echo=FALSE}
+
+options(helloRworld.user = "Rterios")
+Presents()
+```
+
